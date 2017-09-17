@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="bower_components\webcomponentsjs\webcomponents.min.js"></script>
+		<link rel="import" href="components">
+		<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>API Consulting &amp; Investigations</title>
+	</head>
+	<body>
+		<div class="img top">
+			<div>
+				We are the best
+			</div>
+			<div>
+				<a class="button" href="#content">
+					<paper-button raised>Down</paper-button>
+				</a>
+			</div>
+		</div>
+		<div class="content middle" id="content">
+			All our stuff is
+		</div>
+		<div class="content flexbox">
+			<div>
+				<!-- This first <div> guarantees a certain aspect ratio. The other <div>s follow suit because of the parent flexbox -->
+				<div class="box-container golden-ratio vertical">
+					<div class="middle img fast">
+						<paper-button raised>
+							Fast
+						</paper-button>
+					</div>
+				</div>
+			</div>
+			<div class="middle img good">
+				<paper-button raised>
+					Good
+				</paper-button>
+			</div>
+			<div class="middle img cheap">
+				<paper-button raised>
+					Cheap
+				</paper-button>
+			</div>
+		</div>
+		<div class="footer">
+			&copy; 2017 API Consulting &amp; Investications LLC
+		</div>
+	</body>
+	<script>
+		new SmoothScroll("a[href*='#']");
+	</script>
+</html>
