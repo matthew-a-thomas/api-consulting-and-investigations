@@ -3,13 +3,147 @@
 	<head>
 		<title>API Consulting &amp; Investigations</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-		<script src="js/script.js"></script>
-		<link rel="import" href="bower_components/paper-card/paper-card.html">
-		<link rel="import" href="bower_components/paper-button/paper-button.html">
-		<script src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+		<style>
+			.background.black {
+				background: black;
+				color: white;
+			}
+			.background.darker-blue {
+				background: #0249A8;
+				color: white;
+			}
+			.background.darker-purple {
+				background: #3D2025;
+				color: black;
+			}
+			.background.lighter-blue {
+				background: #2A60A4;
+				color: black;
+			}
+			.background.lighter-purple {
+				background: #674056;
+				color: black;
+			}
+			.background.tan {
+				background: #E0A665;
+				color: black;
+			}
+			.background.white {
+				background: white;
+				color: black;
+			}
+			body {
+				background: black;
+				color: white;
+				font-family: sans-serif;
+				font-size: 1em;
+			}
+			.box-container {
+				/* Has 1:1 aspect ratio */
+				width: 100%;
+				padding-top: 100%;
+				position: relative;
+			}
+			.box-container.golden-ratio {
+				padding-top: 61.803%;
+			}
+			.box-container.golden-ratio.vertical {
+				padding-top: 161.803%;
+			}
+			.box-container > * {
+				/* Fills the space of the parent .box-container */
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+			}
+			.button, .paper-button-0 {
+				color: #0249A8;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			.center {
+				text-align: center;
+			}
+			.flexbox {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			.flexbox > * {
+				flex: 1;
+			}
+			.footer {
+				font-size: 0.25em;
+				text-align: right;
+			}
+			.heading {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				font-size: 3vw;
+				height: 100vh;
+				justify-content: center;
+				text-align: center;
+			}
+			.heading > .motto {
+				font-style: italic;
+			}
+			.heading > .name {
+				font-size: 2em;
+			}
+			.img {
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.img.cheap {
+				background-image: url('../img/cheap.png');
+			}
+			.img.fast {
+				background-image: url('../img/fast.jpg');
+			}
+			.img.good {
+				background-image: url('../img/good.jpg');
+			}
+			.img.top {
+				background-image: url('../img/stars.jpg');
+			}
+			.middle {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+			}
+			.paper-button-0 {
+				background: white;
+			}
+			paper-card {
+				width: 20em;
+			}
+			span.important {
+				color: red;
+			}
+			table {
+				border-collapse: collapse;
+			}
+			textarea {
+				box-sizing: border-box;
+				height: 10em;
+			}
+			.title {
+				font-size: 2em;
+			}
+			.wide {
+				width: 100%;
+			}
+		</style>
+		<script async src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+		<link async rel="import" href="bower_components/paper-card/paper-card.html">
+		<link async rel="import" href="bower_components/paper-button/paper-button.html">
 		<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" media="(orientation: landscape)" href="css/landscape.css">
 		<link rel="stylesheet" media="(min-width:500px)" href="css/500.css">
 		<link rel="stylesheet" media="(min-width:1000px)" href="css/1000.css">
@@ -100,7 +234,24 @@
 			&copy; 2017 API Consulting &amp; Investigations LLC
 		</div>
 	</body>
+	<script src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 	<script>
+		// Polyfill polymer
+		(function() {
+			if (
+				'registerElement' in document
+				&& 'import' in document.createElement('link')
+				&& 'content' in document.createElement('template')) {
+				// platform is good!
+			} else {
+				// polyfill the platform!
+				var e = document.createElement('script');
+				e.src = '/bower_components/webcomponentsjs/webcomponents-lite.js';
+				document.body.appendChild(e);
+			}
+		})();
+
+		// Start smooth scroll
 		new SmoothScroll("a[href*='#']");
 	</script>
 </html>
