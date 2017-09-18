@@ -1,3 +1,31 @@
+.background.black {
+	background: black;
+	color: white;
+}
+.background.darker-blue {
+	background: #0249A8;
+	color: white;
+}
+.background.darker-purple {
+	background: #3D2025;
+	color: black;
+}
+.background.lighter-blue {
+	background: #2A60A4;
+	color: black;
+}
+.background.lighter-purple {
+	background: #674056;
+	color: black;
+}
+.background.tan {
+	background: #E0A665;
+	color: black;
+}
+.background.white {
+	background: white;
+	color: black;
+}
 body {
 	background: black;
 	color: white;
@@ -25,14 +53,13 @@ body {
 	right: 0;
 }
 .button, .paper-button-0 {
-	color: #33a;
+	color: #0249A8;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.content {
-	background: white;
-	color: black;
+.center {
+	text-align: center;
 }
 .content.flexbox {
 	align-items: stretch;
@@ -87,6 +114,21 @@ body {
 	background: white;
 }
 paper-card {
-	/* margin: 1em auto; */
 	width: 20em;
+}
+span.important {
+	color: red;
+}
+table {
+	border-collapse: collapse;
+}
+textarea {
+	box-sizing: border-box;
+	height: 10em;
+}
+.title {
+	font-size: 2em;
+}
+.wide {
+	width: 100%;
 }
