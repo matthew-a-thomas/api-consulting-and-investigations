@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
 		<script src="js/script.js"></script>
 		<link rel="import" href="bower_components/paper-card/paper-card.html">
@@ -8,6 +9,9 @@
 		<script src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 		<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" media="(orientation: landscape)" href="css/landscape.css">
+		<link rel="stylesheet" media="(min-width:500px)" href="css/500.css">
+		<link rel="stylesheet" media="(min-width:1000px)" href="css/1000.css">
 		<title>API Consulting &amp; Investigations</title>
 	</head>
 	<body>
@@ -22,7 +26,7 @@
 				<paper-button raised>&#9660;</paper-button>
 			</a>
 		</div>
-		<div class="content flexbox" id="content">
+		<div class="flexbox" id="content">
 			<div class="background white">
 				<div class="title background lighter-blue">
 					Investigative services
@@ -56,7 +60,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="content flexbox background white">
+		<div class="flexbox background white">
 			<div>
 				<div class="title center background tan">
 					Contact us
