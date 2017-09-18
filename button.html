@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html {
+                font-family: sans-serif;
+            }
+            *:focus {
+                outline-color: hsl(240, 100%, 30%);
+            }
+            a.button {
+                cursor: pointer;
+            }
+            .button {
+                background-color: white;
+                border-radius: 0.1em;
+                border-width: 0px;
+                box-shadow: 0em 0.05em 0.2em hsla(0, 0%, 0%, 0.5);
+                color: black;
+                cursor: default;
+                display: inline-block;
+                font-size: inherit;
+                font-weight: bold;
+                padding: 0.5em;
+                margin: 0.5em;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: background-color 0.1s, box-shadow 0.2s;
+                user-select: none;
+            }
+            .button:active {
+                background-color: hsl(0, 0%, 98%);
+                box-shadow: 0em 0.2em 1em hsla(0, 0%, 0%, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        This: <a class="button" href="#">Hello world</a> this is a link
+        <br/>
+        <button class="button">Button</button>
+        <br/>
+        <div class="button">Div</div>
+    </body>
+    <script>
+        const buttons = document.getElementsByClassName("button");
+        for (var i = 0; i < buttons.length; ++i)
+            buttons[i].setAttribute("tabindex", 0);
+    </script>
+</html>
