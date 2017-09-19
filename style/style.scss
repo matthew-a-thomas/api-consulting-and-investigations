@@ -134,18 +134,6 @@ a.button {
     background-repeat: no-repeat;
     background-size: cover;
 
-    &.cheap {
-        background-image: url('../img/cheap.png');
-    }
-
-    &.fast {
-        background-image: url('../img/fast.jpg');
-    }
-
-    &.good {
-        background-image: url('../img/good.jpg');
-    }
-
     &.top {
         background-image: url('../img/stars.jpg');
     }

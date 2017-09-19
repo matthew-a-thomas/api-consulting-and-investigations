@@ -108,12 +108,6 @@ a.button {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
-  .img.cheap {
-    background-image: url("../img/cheap.png"); }
-  .img.fast {
-    background-image: url("../img/fast.jpg"); }
-  .img.good {
-    background-image: url("../img/good.jpg"); }
   .img.top {
     background-image: url("../img/stars.jpg"); }
 
