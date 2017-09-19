@@ -33,6 +33,33 @@
     }
 }
 
+a.button {
+    cursor: pointer;
+}
+.button {
+    background-color: white;
+    border-radius: 0.1em;
+    border-width: 0px;
+    box-shadow: 0em 0.05em 0.2em hsla(0, 0%, 0%, 0.5);
+    color: black;
+    cursor: default;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 0.5em;
+    margin: 0.5em;
+    min-width: 10ch;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.1s, box-shadow 0.2s;
+    user-select: none;
+
+    &:active {
+        background-color: darken(white, 2%);
+        box-shadow: 0em 0.2em 1em hsla(0, 0%, 0%, 0.5);
+    }
+}
+
 html {
     background: black;
     color: white;
@@ -61,33 +88,6 @@ html {
         left: 0;
         bottom: 0;
         right: 0;
-    }
-}
-
-a.button {
-    cursor: pointer;
-}
-.button {
-    background-color: white;
-    border-radius: 0.1em;
-    border-width: 0px;
-    box-shadow: 0em 0.05em 0.2em hsla(0, 0%, 0%, 0.5);
-    color: black;
-    cursor: default;
-    display: inline-block;
-    font-size: inherit;
-    font-weight: bold;
-    padding: 0.5em;
-    margin: 0.5em;
-    min-width: 10ch;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background-color 0.1s, box-shadow 0.2s;
-    user-select: none;
-
-    &:active {
-        background-color: hsl(0, 0%, 98%);
-        box-shadow: 0em 0.2em 1em hsla(0, 0%, 0%, 0.5);
     }
 }
 
