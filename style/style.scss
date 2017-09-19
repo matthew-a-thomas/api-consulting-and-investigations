@@ -1,60 +1,69 @@
 *:focus {
     outline-color: hsl(240, 100%, 30%);
 }
-.background.black {
-    background: black;
-    color: white;
+
+.background {
+    &.black {
+        background: black;
+        color: white;
+    }
+    &.darker-blue {
+        background: #0249A8;
+        color: white;
+    }
+    &.darker-purple {
+        background: #3D2025;
+        color: black;
+    }
+    &.lighter-blue {
+        background: #2A60A4;
+        color: black;
+    }
+    &.lighter-purple {
+        background: #674056;
+        color: black;
+    }
+    &.tan {
+        background: #E0A665;
+        color: black;
+    }
+    &.white {
+        background: white;
+        color: black;
+    }
 }
-.background.darker-blue {
-    background: #0249A8;
-    color: white;
-}
-.background.darker-purple {
-    background: #3D2025;
-    color: black;
-}
-.background.lighter-blue {
-    background: #2A60A4;
-    color: black;
-}
-.background.lighter-purple {
-    background: #674056;
-    color: black;
-}
-.background.tan {
-    background: #E0A665;
-    color: black;
-}
-.background.white {
-    background: white;
-    color: black;
-}
+
 html {
     background: black;
     color: white;
     font-family: sans-serif;
     font-size: 1em;
 }
+
 .box-container {
     /* Has 1:1 aspect ratio */
     width: 100%;
     padding-top: 100%;
     position: relative;
+    
+    &.golden-ratio {
+        padding-top: 61.803%;
+    
+        &.vertical {
+            padding-top: 161.803%;
+        }
+    }
+    
+    > * {
+        /* Fills the space of the parent .box-container */
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
 }
-.box-container.golden-ratio {
-    padding-top: 61.803%;
-}
-.box-container.golden-ratio.vertical {
-    padding-top: 161.803%;
-}
-.box-container > * {
-    /* Fills the space of the parent .box-container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
+
 a.button {
     cursor: pointer;
 }
@@ -75,27 +84,33 @@ a.button {
     text-transform: uppercase;
     transition: background-color 0.1s, box-shadow 0.2s;
     user-select: none;
+
+    &:active {
+        background-color: hsl(0, 0%, 98%);
+        box-shadow: 0em 0.2em 1em hsla(0, 0%, 0%, 0.5);
+    }
 }
-.button:active {
-    background-color: hsl(0, 0%, 98%);
-    box-shadow: 0em 0.2em 1em hsla(0, 0%, 0%, 0.5);
-}
+
 .center {
     text-align: center;
 }
+
 .flexbox {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    & > * {
+        flex: 1;
+    }
 }
-.flexbox > * {
-    flex: 1;
-}
+
 .footer {
     font-size: 0.25em;
     text-align: right;
 }
+
 .heading {
     align-items: center;
     display: flex;
@@ -104,54 +119,63 @@ a.button {
     height: 100vh;
     justify-content: center;
     text-align: center;
+    
+    & > .motto {
+        font-style: italic;
+    }
+
+    & > .name {
+        font-size: 2em;
+    }
 }
-.heading > .motto {
-    font-style: italic;
-}
-.heading > .name {
-    font-size: 2em;
-}
+
 .img {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &.cheap {
+        background-image: url('../img/cheap.png');
+    }
+
+    &.fast {
+        background-image: url('../img/fast.jpg');
+    }
+
+    &.good {
+        background-image: url('../img/good.jpg');
+    }
+
+    &.top {
+        background-image: url('../img/stars.jpg');
+    }
 }
-.img.cheap {
-    background-image: url('../img/cheap.png');
-}
-.img.fast {
-    background-image: url('../img/fast.jpg');
-}
-.img.good {
-    background-image: url('../img/good.jpg');
-}
-.img.top {
-    background-image: url('../img/stars.jpg');
-}
+
 .middle {
     align-items: center;
     display: flex;
     justify-content: center;
 }
-.paper-button-0 {
-    background: white;
+
+span {
+    &.important {
+        color: red;
+    }
 }
-paper-card {
-    width: 20em;
-}
-span.important {
-    color: red;
-}
+
 table {
     border-collapse: collapse;
 }
+
 textarea {
     box-sizing: border-box;
     height: 10em;
 }
+
 .title {
     font-size: 2em;
 }
+
 .wide {
     width: 100%;
 }
