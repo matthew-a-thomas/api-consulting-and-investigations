@@ -7,15 +7,6 @@
             "taskName": "echo",
             "type": "shell",
             "command": "echo Hello"
-        },
-        {
-            "type": "gulp",
-            "task": "default",
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
         }
     ]
 }

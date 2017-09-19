@@ -4,27 +4,21 @@
 .background.black {
   background-color: black;
   color: white; }
-
 .background.darker-blue {
   background-color: #0249A8;
   color: white; }
-
 .background.darker-purple {
   background-color: #3D2025;
   color: black; }
-
 .background.lighter-blue {
   background-color: #2A60A4;
   color: black; }
-
 .background.lighter-purple {
   background-color: #674056;
   color: black; }
-
 .background.tan {
   background-color: #E0A665;
   color: black; }
-
 .background.white, .button, .panel {
   background-color: white;
   color: black; }
@@ -143,3 +137,5 @@ textarea {
 .panel .header {
   font-size: 2em;
   margin-bottom: 0.5em; }
+
+/*# sourceMappingURL=style.css.map */
