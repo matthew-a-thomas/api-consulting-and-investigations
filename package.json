@@ -1,0 +1,23 @@
+{
+  "name": "api-consulting-and-investigations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-a-thomas/api-consulting-and-investigations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthew-a-thomas/api-consulting-and-investigations/issues"
+  },
+  "homepage": "https://github.com/matthew-a-thomas/api-consulting-and-investigations#readme",
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "smooth-scroll": "^12.1.5"
+  }
+}
