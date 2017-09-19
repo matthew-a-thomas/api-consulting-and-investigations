@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACL,cAAc,EAAE,GAAG",
+"sources": ["../app/sass/500.scss"],
+"names": [],
+"file": "500.css"
+}
