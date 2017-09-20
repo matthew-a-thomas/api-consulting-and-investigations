@@ -1,0 +1,159 @@
+@import 'button';
+@import 'colors';
+@import 'images';
+@import 'positioning';
+@import 'spacing';
+
+html {
+    font-family: sans-serif;
+
+    a {
+        $color: $lighter-blue;
+
+        color: $color;
+
+        &:visited {
+            color: $color;
+        }
+    }
+
+    > body {
+        padding: 0;
+        margin: 0;
+
+        > #top {
+            $background-color: black;
+            $text-color: white;
+
+            @extend #flex-down;
+            @include background-image($img-stars);
+            color: $text-color;
+            height: 100vh;
+
+            > #title {
+                font-size: 6vw;
+            }
+
+            > #motto {
+                font-size: 3vw;
+                font-style: italic;
+            }
+
+            > #button {
+                @extend #button;
+            }
+        }
+
+        > #middle {
+            .row {
+                @extend #flex;
+
+                align-items: stretch;
+                justify-content: space-around;
+
+                > .column {
+                    @extend %margin;
+
+                    flex: 1;
+                }
+            }
+
+            .section {
+                @extend %shadow;
+
+                #title {
+                    @extend %flat;
+
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    display: block;
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+                @for $i from 1 through length($colors) {
+                    > .title-#{$i} {
+                        @extend #title;
+    
+                        background-color: nth($colors, $i);
+                    }
+                }
+
+                > .content {
+                    @extend %padding;
+                }
+            }
+
+            #investigative-services {
+
+            }
+
+            #background-and-experience {
+
+            }
+
+            #contact-us {
+                %common {
+                    @extend %padding;
+
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+
+                #message {
+                    @extend %common;
+
+                    height: 10em;
+                    vertical-align: top;
+                }
+
+                #name {
+                    @extend %common;
+                }
+
+                #email {
+                    @extend %common;
+                }
+
+                #send-email {
+                }
+
+                table {
+                    width: 100%;
+
+                    td:first-child {
+                        width: 100%;
+                    }
+                    td:not(:first-child) {
+                        width: auto;
+
+                        // > * {
+                        //     @extend %margin;
+                        // }
+                    }
+                }
+            }
+        }
+
+        > #footer {
+            @extend %padding;
+
+            background-color: black;
+            color: white;
+            font-size: 0.5em;
+            text-align: right;
+        }
+    }
+
+    button, input[type="button"], input[type="submit"] {
+        @extend #button;
+    }
+}
+
+.snippet {
+    @extend %margin;
+    @extend %padding;
+    @extend %shadow;
+
+    display: inline-block;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>API Consulting &amp; Investigations</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style2.css">
+    </head>
+    <body>
+        <div id="top">
+            <div id="title">
+                API Consulting &amp; Investigations
+            </div>
+            <div id="motto">
+                Motto motto: motto motto, motto motto, motto motto
+            </div>
+            <a id="button" href="#middle">&#9660;</a>
+        </div>
+        <div id="middle">
+            <div class="row">
+                <div class="column section" id="investigative-services">
+                    <div class="title-1">
+                        Investigative services
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>One</li>
+                            <li>Two</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column section" id="background-and-experience">
+                    <div class="title-2">
+                        Background and experience
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column section" id="contact-us">
+                    <div class="title-3">
+                        Contact us
+                    </div>
+                    <form class="content">
+                        <div>
+                            This form sends an email to: <a href="mailto:email@example.com"><span class="snippet">email@example.com</span></a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea name="message" id="message"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="name" id="name"/>
+                                </td>
+                                <td>
+                                    <label for="name">Name</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="email" id="email"/>
+                                </td>
+                                <td>
+                                    <label for="email">Email</label>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="submit" class="wide" id="send-email" value="Send email"/>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer">
+            &copy; 2017 API Consulting &amp; Investigations LLC
+        </div>
+    </body>
+	<script src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+	<script>
+		// Start smooth scroll
+		new SmoothScroll("a[href*='#']");
+	</script>
+</html>

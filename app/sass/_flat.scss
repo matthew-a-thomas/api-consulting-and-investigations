@@ -1,0 +1,9 @@
+@import 'spacing';
+
+%flat {
+    @extend %padding;
+
+    border-radius: 0.1em;
+    border-width: 0px;
+    display: inline-block;
+}

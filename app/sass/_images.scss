@@ -1,0 +1,13 @@
+$img-stars: 'stars.jpg';
+
+@function make-img-url($pic) {
+    $img-root: '../img/';
+    @return url($img-root + $pic);
+}
+
+@mixin background-image($pic) {
+    background-image: make-img-url($pic);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
