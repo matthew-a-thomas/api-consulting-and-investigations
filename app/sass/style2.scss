@@ -22,11 +22,12 @@ html {
         margin: 0;
 
         > #top {
-            $background-color: black;
+            $background-color: $darkest-blue;
             $text-color: white;
 
             @extend #flex-down;
             @include background-image($img-stars);
+            background-color: $background-color;
             color: $text-color;
             height: 100vh;
 

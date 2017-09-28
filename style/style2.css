@@ -72,6 +72,7 @@ html {
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
+      background-color: #011d43;
       color: white;
       height: 100vh; }
       html > body > #top > #title, html > body > #middle html > body > .section#top > .title-1, html > body > #middle html > body > .section#top > .title-2, html > body > #middle html > body > .section#top > .title-3, html > body > #middle html > body > .section#top > .title-4, html > body > #middle html > body > .section#top > .title-5 {
