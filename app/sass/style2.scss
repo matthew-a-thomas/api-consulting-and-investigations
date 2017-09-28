@@ -53,13 +53,12 @@ html {
                 justify-content: space-around;
 
                 > .column {
-                    @extend %margin;
-
                     flex: 1;
                 }
             }
 
             .section {
+                @extend %margin;
                 @extend %shadow;
 
                 #title {
@@ -86,14 +85,16 @@ html {
             }
 
             #investigative-services {
-
+                margin-right: $margin / 2;
             }
 
             #background-and-experience {
-
+                margin-left: $margin / 2;
             }
 
             #contact-us {
+                margin-top: 0;
+
                 %common {
                     @extend %padding;
 

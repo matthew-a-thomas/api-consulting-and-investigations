@@ -1,4 +1,4 @@
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .row > .column, .snippet {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   margin: 0.5em; }
 
 #button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
@@ -16,7 +16,7 @@
 #button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   box-shadow: 0em 0.05em 0.2em rgba(0, 0, 0, 0.75); }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .row > .column, .snippet {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   margin: 0.5em; }
 
 #button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
@@ -52,7 +52,7 @@ a.button {
 #flex-down, html > body > #top {
   flex-direction: column; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .row > .column, .snippet {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   margin: 0.5em; }
 
 #button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
@@ -101,18 +101,24 @@ html {
       background-color: #2A60A4; }
     html > body > #middle .section > .title-5 {
       background-color: #E0A665; }
-    html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email {
-      box-sizing: border-box;
-      width: 100%; }
-    html > body > #middle #contact-us #message {
-      height: 10em;
-      vertical-align: top; }
-    html > body > #middle #contact-us table {
-      width: 100%; }
-      html > body > #middle #contact-us table td:first-child {
+    html > body > #middle #investigative-services {
+      margin-right: 0.25em; }
+    html > body > #middle #background-and-experience {
+      margin-left: 0.25em; }
+    html > body > #middle #contact-us {
+      margin-top: 0; }
+      html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email {
+        box-sizing: border-box;
         width: 100%; }
-      html > body > #middle #contact-us table td:not(:first-child) {
-        width: auto; }
+      html > body > #middle #contact-us #message {
+        height: 10em;
+        vertical-align: top; }
+      html > body > #middle #contact-us table {
+        width: 100%; }
+        html > body > #middle #contact-us table td:first-child {
+          width: 100%; }
+        html > body > #middle #contact-us table td:not(:first-child) {
+          width: auto; }
     html > body > #footer {
       background-color: black;
       color: white;
