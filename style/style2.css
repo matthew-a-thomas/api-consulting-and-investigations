@@ -1,10 +1,10 @@
 #button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   margin: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
   padding: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5 {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title {
   border-radius: 0.1em;
   border-width: 0px;
   display: inline-block; }
@@ -19,7 +19,7 @@
 #button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   margin: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
   padding: 0.5em; }
 
 a.button {
@@ -55,7 +55,7 @@ a.button {
 #button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   margin: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
   padding: 0.5em; }
 
 html {
@@ -75,7 +75,7 @@ html {
       background-color: #011d43;
       color: white;
       height: 100vh; }
-      html > body > #top > #title, html > body > #middle html > body > .section#top > .title-1, html > body > #middle html > body > .section#top > .title-2, html > body > #middle html > body > .section#top > .title-3, html > body > #middle html > body > .section#top > .title-4, html > body > #middle html > body > .section#top > .title-5 {
+      html > body > #top > #title {
         font-size: 6vw; }
       html > body > #top > #motto {
         font-size: 3vw;
@@ -85,22 +85,14 @@ html {
       justify-content: space-around; }
       html > body > #middle .row > .column {
         flex: 1; }
-    html > body > #middle .section #title, html > body > #middle .section > .title-1, html > body > #middle .section > .title-2, html > body > #middle .section > .title-3, html > body > #middle .section > .title-4, html > body > #middle .section > .title-5 {
+    html > body > #middle .section .title {
+      background-color: #011d43;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
+      color: white;
       display: block;
       font-size: 2em;
       text-align: center; }
-    html > body > #middle .section > .title-1 {
-      background-color: #0249A8; }
-    html > body > #middle .section > .title-2 {
-      background-color: #3D2025; }
-    html > body > #middle .section > .title-3 {
-      background-color: #674056; }
-    html > body > #middle .section > .title-4 {
-      background-color: #2A60A4; }
-    html > body > #middle .section > .title-5 {
-      background-color: #E0A665; }
     html > body > #middle #investigative-services {
       margin-right: 0.25em; }
     html > body > #middle #background-and-experience {
