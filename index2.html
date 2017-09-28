@@ -97,9 +97,11 @@
             &copy; 2017 API Consulting &amp; Investigations LLC
         </div>
     </body>
-	<script src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-	<script>
-		// Start smooth scroll
-		new SmoothScroll("a[href*='#']");
-	</script>
+    <script>
+        function startSmoothScroll() {
+            // Start smooth scroll
+            new SmoothScroll("a[href*='#']");
+        }
+    </script>
+	<script async onload="startSmoothScroll()" src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </html>
