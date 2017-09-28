@@ -20,10 +20,12 @@
 
             makeAsyncLink("node_modules/normalize.css/normalize.css");
             makeAsyncLink("style/style2.css");
+            makeAsyncLink("style/font-awesome.css");
         </script>
         <noscript>
             <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
             <link rel="stylesheet" href="style/style2.css">
+            <link rel="stylesheet" href="style/font-awesome.css">
         </noscript>
     </head>
     <body>
@@ -82,32 +84,52 @@
                     </div>
                     <form class="content">
                         <div>
-                            This form sends an email to: <a target="_blank" href="mailto:email@example.com"><span class="snippet">email@example.com</span></a>
+                            This form sends an email to:
+                            <a target="_blank" href="mailto:email@example.com">
+                                <span class="snippet">
+                                <i class="fa fa-envelope-o"></i>
+                                email@example.com</span>
+                            </a>
                         </div>
                         <table>
                             <tr>
+                                <td>
+                                    <i class="fa fa-sticky-note-o"></i>
+                                </td>
                                 <td colspan="2">
                                     <textarea name="message" id="message"></textarea>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
+                                    <i class="fa fa-address-card-o"></i>
+                                </td>
+                                <td>
                                     <input type="text" name="name" id="name"/>
                                 </td>
                                 <td>
-                                    <label for="name">Name</label>
+                                    <label for="name">
+                                        Name
+                                    </label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
+                                    <i class="fa fa-envelope-o"></i>
+                                </td>
+                                <td>
                                     <input type="text" name="email" id="email"/>
                                 </td>
                                 <td>
-                                    <label for="email">Email</label>
+                                    <label for="email">
+                                        Email
+                                    </label>
                                 </td>
                             </tr>
                         </table>
-                        <input type="submit" class="wide" id="send-email" value="Send email"/>
+                        <button type="submit" class="wide" id="send-email">
+                            <i class="fa fa-send" aria-hidden="true"></i> Send email
+                        </button>
                     </form>
                 </div>
             </div>
