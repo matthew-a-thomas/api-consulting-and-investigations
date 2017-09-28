@@ -2,8 +2,29 @@
 <html>
 	<head>
 		<title>API Consulting &amp; Investigations</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style/style2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            /**
+             * Adds a new <link> element to the <head> that is asynchronously loaded.
+             * https://stackoverflow.com/a/40314216/3063273
+             */
+            function makeAsyncLink(href) {
+                const head = document.getElementsByTagName("head")[0];
+                const link = document.createElement("link");
+                link.setAttribute("href", href);
+                link.setAttribute("media", "none");
+                link.setAttribute("onload", "media=\"all\"");
+                link.setAttribute("rel", "stylesheet");
+                head.appendChild(link);
+            }
+
+            makeAsyncLink("node_modules/normalize.css/normalize.css");
+            makeAsyncLink("style/style2.css");
+        </script>
+        <noscript>
+            <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+            <link rel="stylesheet" href="style/style2.css">
+        </noscript>
     </head>
     <body>
         <div id="top">
@@ -41,7 +62,7 @@
                     </div>
                     <form class="content">
                         <div>
-                            This form sends an email to: <a href="mailto:email@example.com"><span class="snippet">email@example.com</span></a>
+                            This form sends an email to: <a target="_blank" href="mailto:email@example.com"><span class="snippet">email@example.com</span></a>
                         </div>
                         <table>
                             <tr>
