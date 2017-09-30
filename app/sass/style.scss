@@ -2,20 +2,11 @@
 @import 'colors';
 @import 'images';
 @import 'positioning';
+@import 'round';
 @import 'spacing';
 
 html {
     font-family: sans-serif;
-
-    a {
-        $color: $lighter-blue;
-
-        color: $color;
-
-        &:visited {
-            color: $color;
-        }
-    }
 
     > body {
         padding: 0;
@@ -38,10 +29,6 @@ html {
             > #motto {
                 font-size: 3vw;
                 font-style: italic;
-            }
-
-            > #button {
-                @extend #button;
             }
         }
 
@@ -118,15 +105,16 @@ html {
                 }
 
                 #send-email {
+                    float: right;
                 }
 
                 table {
                     width: 100%;
 
-                    td:nth-child(2) {
+                    td:nth-child(1) {
                         width: 100%;
                     }
-                    td:not(:nth-child(2)) {
+                    td:not(:nth-child(1)) {
                         width: auto;
                     }
                 }
@@ -143,15 +131,19 @@ html {
         }
     }
 
+    a {
+        @extend .button;
+
+        color: $lighter-blue;
+    }
+
     button, input[type="button"], input[type="submit"] {
         @extend #button;
     }
-}
 
-.snippet {
-    @extend %margin;
-    @extend %padding;
-    @extend %shadow;
+    input[type=text], textarea {
+        @extend %round;
 
-    display: inline-block;
+        border: thin solid rgba(black, 0.5);
+    }
 }

@@ -1,31 +1,33 @@
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html input[type=text], html textarea {
+  border-radius: 0.1em; }
+
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
   margin: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer {
   padding: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title {
-  border-radius: 0.1em;
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title {
   border-width: 0px;
   display: inline-block; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"] {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"] {
   cursor: default;
   user-select: none; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
   box-shadow: 0em 0.05em 0.2em rgba(0, 0, 0, 0.75); }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
   margin: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer {
   padding: 0.5em; }
 
-a.button {
+a.button, html a {
   cursor: pointer; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"] {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"] {
   background-color: white;
   color: black;
   font-size: inherit;
@@ -35,10 +37,10 @@ a.button {
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.1s, box-shadow 0.2s; }
-  #button:active, .button:active, html > body > #top > #button:active, html button:active, html input[type="button"]:active, html input[type="submit"]:active {
+  #button:active, .button:active, html a:active, html button:active, html input[type="button"]:active, html input[type="submit"]:active {
     background-color: #fafafa;
     box-shadow: 0em 0.2em 1em rgba(0, 0, 0, 0.5); }
-  #button.wide, .wide.button, html > body > #top > .wide#button, html button.wide, html input.wide[type="button"], html input.wide[type="submit"] {
+  #button.wide, .wide.button, html a.wide, html button.wide, html input.wide[type="button"], html input.wide[type="submit"] {
     display: block;
     margin-left: 0;
     margin-right: 0;
@@ -52,18 +54,17 @@ a.button {
 #flex-down, html > body > #top {
   flex-direction: column; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html input[type=text], html textarea {
+  border-radius: 0.1em; }
+
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
   margin: 0.5em; }
 
-#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer {
   padding: 0.5em; }
 
 html {
   font-family: sans-serif; }
-  html a {
-    color: #2A60A4; }
-    html a:visited {
-      color: #2A60A4; }
   html > body {
     padding: 0;
     margin: 0; }
@@ -111,19 +112,22 @@ html {
         html > body > #middle #contact-us #message {
           height: 10em;
           vertical-align: top; }
+        html > body > #middle #contact-us #send-email {
+          float: right; }
         html > body > #middle #contact-us table {
           width: 100%; }
-          html > body > #middle #contact-us table td:nth-child(2) {
+          html > body > #middle #contact-us table td:nth-child(1) {
             width: 100%; }
-          html > body > #middle #contact-us table td:not(:nth-child(2)) {
+          html > body > #middle #contact-us table td:not(:nth-child(1)) {
             width: auto; }
     html > body > #footer {
       background-color: black;
       color: white;
       font-size: 0.5em;
       text-align: right; }
-
-.snippet {
-  display: inline-block; }
+  html a {
+    color: #2A60A4; }
+  html input[type=text], html textarea {
+    border: thin solid rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */

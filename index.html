@@ -38,7 +38,7 @@
             <div id="motto">
                 Motto motto: motto motto, motto motto, motto motto
             </div>
-            <a id="button" href="#middle">&#9660;</a>
+            <a href="#middle">&#9660;</a>
         </div>
         <div id="middle">
             <div class="row">
@@ -86,26 +86,21 @@
                     </div>
                     <form class="content">
                         <div>
-                            This form sends an email to:
                             <a target="_blank" href="mailto:email@example.com">
-                                <span class="snippet">
                                 <i class="fa fa-envelope-o"></i>
-                                email@example.com</span>
+                                email@example.com
                             </a>
+                        </div>
+                        <div style="margin: auto; font-size: 1em">
+                            Or, send a message below:
                         </div>
                         <table>
                             <tr>
-                                <td>
-                                    <i class="fa fa-sticky-note-o"></i>
-                                </td>
                                 <td colspan="2">
                                     <textarea name="message" id="message"></textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <i class="fa fa-address-card-o"></i>
-                                </td>
                                 <td>
                                     <input type="text" name="name" id="name"/>
                                 </td>
@@ -117,9 +112,6 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <i class="fa fa-envelope-o"></i>
-                                </td>
-                                <td>
                                     <input type="text" name="email" id="email"/>
                                 </td>
                                 <td>
@@ -129,7 +121,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <button type="submit" class="wide" id="send-email">
+                        <button type="submit" id="send-email">
                             <i class="fa fa-send" aria-hidden="true"></i> Send email
                         </button>
                     </form>
