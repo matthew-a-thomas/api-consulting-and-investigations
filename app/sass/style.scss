@@ -1,209 +1,157 @@
-*:focus {
-    outline-color: hsl(240, 100%, 30%);
-}
-
-$darker-blue: #0249A8;
-$darker-purple: #3D2025;
-$lighter-blue: #2A60A4;
-$lighter-purple: #674056;
-$tan: #E0A665;
-
-.background {
-    &.black {
-        background-color: black;
-        color: white;
-    }
-    &.darker-blue {
-        background-color: $darker-blue;
-        color: white;
-    }
-    &.darker-purple {
-        background-color: $darker-purple;
-        color: black;
-    }
-    &.lighter-blue {
-        background-color: $lighter-blue;
-        color: black;
-    }
-    &.lighter-purple {
-        background-color: $lighter-purple;
-        color: black;
-    }
-    &.tan {
-        background-color: $tan;
-        color: black;
-    }
-    &.white {
-        background-color: white;
-        color: black;
-    }
-}
-
-.margin {
-    margin: 0.5em;
-}
-.padding {
-    padding: 0.5em;
-}
-
-.flat {
-    @extend .padding;
-
-    border-radius: 0.1em;
-    border-width: 0px;
-    display: inline-block;
-    min-width: 10ch;
-}
-
-.no-click {
-    cursor: default;
-    user-select: none;
-}
-
-.shadow {
-    box-shadow: 0em 0.05em 0.2em rgba(black, 0.75);
-}
-
-a.button {
-    cursor: pointer;
-}
-.button {
-    @extend .flat;
-    @extend .margin;
-    @extend .no-click;
-    @extend .background.white;
-    @extend .shadow;
-
-    font-size: inherit;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background-color 0.1s, box-shadow 0.2s;
-
-    &:active {
-        background-color: darken(white, 2%);
-        box-shadow: 0em 0.2em 1em hsla(0, 0%, 0%, 0.5);
-    }
-}
+@import 'button';
+@import 'colors';
+@import 'images';
+@import 'positioning';
+@import 'spacing';
 
 html {
-    background: black;
-    color: white;
     font-family: sans-serif;
-    font-size: 1em;
-}
 
-.box-container {
-    /* Has 1:1 aspect ratio */
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
-    
-    &.golden-ratio {
-        padding-top: 61.803%;
-    
-        &.vertical {
-            padding-top: 161.803%;
+    a {
+        $color: $lighter-blue;
+
+        color: $color;
+
+        &:visited {
+            color: $color;
         }
     }
-    
-    > * {
-        /* Fills the space of the parent .box-container */
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+
+    > body {
+        padding: 0;
+        margin: 0;
+
+        > #top {
+            $background-color: $darkest-blue;
+            $text-color: white;
+
+            @extend #flex-down;
+            @include background-image($img-stars);
+            background-color: $background-color;
+            color: $text-color;
+            height: 100vh;
+
+            > #title {
+                font-size: 6vw;
+            }
+
+            > #motto {
+                font-size: 3vw;
+                font-style: italic;
+            }
+
+            > #button {
+                @extend #button;
+            }
+        }
+
+        > #middle {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 120ch;
+
+            .row {
+                @extend #flex;
+
+                align-items: stretch;
+                justify-content: space-around;
+
+                > .column {
+                    flex: 1;
+                }
+            }
+
+            .section {
+                @extend %margin;
+                @extend %shadow;
+
+                .title {
+                    @extend %flat;
+
+                    background-color: $darkest-blue;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    color: white;
+                    display: block;
+                    font-size: 2em;
+                    text-align: center;
+                }
+
+                > .content {
+                    @extend %padding;
+
+                    background-color: white;
+                }
+            }
+
+            #investigative-services {
+                margin-right: $margin / 2;
+            }
+
+            #background-and-experience {
+                margin-left: $margin / 2;
+            }
+
+            #contact-us {
+                margin-top: 0;
+
+                %common {
+                    @extend %padding;
+
+                    box-sizing: border-box;
+                    width: 100%;
+                }
+
+                #message {
+                    @extend %common;
+
+                    height: 10em;
+                    vertical-align: top;
+                }
+
+                #name {
+                    @extend %common;
+                }
+
+                #email {
+                    @extend %common;
+                }
+
+                #send-email {
+                }
+
+                table {
+                    width: 100%;
+
+                    td:nth-child(2) {
+                        width: 100%;
+                    }
+                    td:not(:nth-child(2)) {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        > #footer {
+            @extend %padding;
+
+            background-color: black;
+            color: white;
+            font-size: 0.5em;
+            text-align: right;
+        }
+    }
+
+    button, input[type="button"], input[type="submit"] {
+        @extend #button;
     }
 }
 
-.center {
-    text-align: center;
-}
+.snippet {
+    @extend %margin;
+    @extend %padding;
+    @extend %shadow;
 
-.flexbox {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    & > * {
-        flex: 1;
-    }
-}
-
-.footer {
-    font-size: 0.25em;
-    text-align: right;
-}
-
-.heading {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 3vw;
-    height: 100vh;
-    justify-content: center;
-    text-align: center;
-    
-    & > .motto {
-        font-style: italic;
-    }
-
-    & > .name {
-        font-size: 2em;
-    }
-}
-
-.img {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    &.top {
-        background-image: url('../img/stars.jpg');
-    }
-}
-
-.middle {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-span {
-    &.important {
-        color: red;
-    }
-}
-
-table {
-    border-collapse: collapse;
-}
-
-textarea {
-    box-sizing: border-box;
-    height: 10em;
-}
-
-.title {
-    font-size: 2em;
-}
-
-.wide {
-    width: 100%;
-}
-
-.panel {
-    @extend .flexbox;
-    @extend .padding;
-    @extend .background.white;
-
-    .header {
-        @extend .flat;
-        @extend .middle;
-
-        font-size: 2em;
-        margin-bottom: 0.5em;
-    }
+    display: inline-block;
 }

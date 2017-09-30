@@ -1,141 +1,129 @@
-*:focus {
-  outline-color: #000099; }
-
-.background.black {
-  background-color: black;
-  color: white; }
-.background.darker-blue {
-  background-color: #0249A8;
-  color: white; }
-.background.darker-purple {
-  background-color: #3D2025;
-  color: black; }
-.background.lighter-blue {
-  background-color: #2A60A4;
-  color: black; }
-.background.lighter-purple {
-  background-color: #674056;
-  color: black; }
-.background.tan {
-  background-color: #E0A665;
-  color: black; }
-.background.white, .button, .panel {
-  background-color: white;
-  color: black; }
-
-.margin, .button {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   margin: 0.5em; }
 
-.padding, .flat, .button, .panel .header, .panel {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
   padding: 0.5em; }
 
-.flat, .button, .panel .header {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title {
   border-radius: 0.1em;
   border-width: 0px;
-  display: inline-block;
-  min-width: 10ch; }
+  display: inline-block; }
 
-.no-click, .button {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"] {
   cursor: default;
   user-select: none; }
 
-.shadow, .button {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
   box-shadow: 0em 0.05em 0.2em rgba(0, 0, 0, 0.75); }
+
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
+  margin: 0.5em; }
+
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+  padding: 0.5em; }
 
 a.button {
   cursor: pointer; }
 
-.button {
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"] {
+  background-color: white;
+  color: black;
   font-size: inherit;
   font-weight: bold;
+  min-width: 10ch;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.1s, box-shadow 0.2s; }
-  .button:active {
+  #button:active, .button:active, html > body > #top > #button:active, html button:active, html input[type="button"]:active, html input[type="submit"]:active {
     background-color: #fafafa;
     box-shadow: 0em 0.2em 1em rgba(0, 0, 0, 0.5); }
+  #button.wide, .wide.button, html > body > #top > .wide#button, html button.wide, html input.wide[type="button"], html input.wide[type="submit"] {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; }
 
-html {
-  background: black;
-  color: white;
-  font-family: sans-serif;
-  font-size: 1em; }
-
-.box-container {
-  /* Has 1:1 aspect ratio */
-  width: 100%;
-  padding-top: 100%;
-  position: relative; }
-  .box-container.golden-ratio {
-    padding-top: 61.803%; }
-    .box-container.golden-ratio.vertical {
-      padding-top: 161.803%; }
-  .box-container > * {
-    /* Fills the space of the parent .box-container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
-
-.center {
-  text-align: center; }
-
-.flexbox, .panel {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .flexbox > *, .panel > * {
-    flex: 1; }
-
-.footer {
-  font-size: 0.25em;
-  text-align: right; }
-
-.heading {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 3vw;
-  height: 100vh;
-  justify-content: center;
-  text-align: center; }
-  .heading > .motto {
-    font-style: italic; }
-  .heading > .name {
-    font-size: 2em; }
-
-.img {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .img.top {
-    background-image: url("../img/stars.jpg"); }
-
-.middle, .panel .header {
+#flex, #flex-down, html > body > #top, html > body > #middle .row {
   align-items: center;
   display: flex;
   justify-content: center; }
 
-span.important {
-  color: red; }
+#flex-down, html > body > #top {
+  flex-direction: column; }
 
-table {
-  border-collapse: collapse; }
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, .snippet {
+  margin: 0.5em; }
 
-textarea {
-  box-sizing: border-box;
-  height: 10em; }
+#button, .button, html > body > #top > #button, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer, .snippet {
+  padding: 0.5em; }
 
-.title {
-  font-size: 2em; }
+html {
+  font-family: sans-serif; }
+  html a {
+    color: #2A60A4; }
+    html a:visited {
+      color: #2A60A4; }
+  html > body {
+    padding: 0;
+    margin: 0; }
+    html > body > #top {
+      background-image: url("../img/stars.jpg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #011d43;
+      color: white;
+      height: 100vh; }
+      html > body > #top > #title {
+        font-size: 6vw; }
+      html > body > #top > #motto {
+        font-size: 3vw;
+        font-style: italic; }
+    html > body > #middle {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 120ch; }
+      html > body > #middle .row {
+        align-items: stretch;
+        justify-content: space-around; }
+        html > body > #middle .row > .column {
+          flex: 1; }
+      html > body > #middle .section .title {
+        background-color: #011d43;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        color: white;
+        display: block;
+        font-size: 2em;
+        text-align: center; }
+      html > body > #middle .section > .content {
+        background-color: white; }
+      html > body > #middle #investigative-services {
+        margin-right: 0.25em; }
+      html > body > #middle #background-and-experience {
+        margin-left: 0.25em; }
+      html > body > #middle #contact-us {
+        margin-top: 0; }
+        html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email {
+          box-sizing: border-box;
+          width: 100%; }
+        html > body > #middle #contact-us #message {
+          height: 10em;
+          vertical-align: top; }
+        html > body > #middle #contact-us table {
+          width: 100%; }
+          html > body > #middle #contact-us table td:nth-child(2) {
+            width: 100%; }
+          html > body > #middle #contact-us table td:not(:nth-child(2)) {
+            width: auto; }
+    html > body > #footer {
+      background-color: black;
+      color: white;
+      font-size: 0.5em;
+      text-align: right; }
 
-.wide {
-  width: 100%; }
-
-.panel .header {
-  font-size: 2em;
-  margin-bottom: 0.5em; }
+.snippet {
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

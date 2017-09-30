@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,QAAS;EACL,SAAS,EAAE,GAAG",
+"mappings": "AAGY,2BAAS;EACL,SAAS,EAAE,GAAG;AAGlB,2BAAS;EACL,SAAS,EAAE,GAAG",
 "sources": ["../app/sass/landscape.scss"],
 "names": [],
 "file": "landscape.css"

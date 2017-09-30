@@ -2,102 +2,150 @@
 <html>
 	<head>
 		<title>API Consulting &amp; Investigations</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style/style.css">
-		<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-		<link rel="stylesheet" media="(orientation: landscape)" href="style/landscape.css">
-		<link rel="stylesheet" media="(min-width:500px)" href="style/500.css">
-		<link rel="stylesheet" media="(min-width:1000px)" href="style/1000.css">
-	</head>
-	<body>
-		<div class="heading img top">
-			<div class="name">
-				API Consulting &amp; Investigations
-			</div>
-			<div class="motto">
-				Motto motto: motto motto, motto motto, motto motto
-			</div>
-			<a class="button" href="#content">&#9660;</a>
-		</div>
-		<div class="flexbox" id="content">
-			<div class="background white">
-				<div class="title background lighter-blue flat middle center">
-					Investigative services
-				</div>
-				<ul>
-					<li>Fraud and embezzlement</li>
-					<li>Background and employment checks</li>
-					<li>Surveillance</li>
-					<li>Identity theft</li>
-					<li>Computer intrusion</li>
-					<li>Intellectual property rights violations</li>
-					<li>Income and asset tracing and verification</li>
-				</ul>
-			</div>
-			<div class="background white">
-				<div class="title background lighter-purple flat middle center">
-					Background and experience
-				</div>
-				<ul>
-					<li>Licensed Private Investigator</li>
-					<li>Retired FBI Special Agent of over 30 years</li>
-					<li>B.S. Business Administration / Accounting graduate</li>
-				</ul>
-				<ul>
-					<li>Specialized in fraud and financial investigations</li>
-					<li>Collected evidence through discrete surveillance techniques</li>
-					<li>Testified in court at Federal and State levels leading to convictions and asset forfeitures</li>
-					<li>Obtained cooperation and confessions through interviews and interrogations</li>
-					<li>Successfully prosecuted top criminals</li>
-					<li>Led cyber and intellectual property rights investigations</li>
-				</ul>
-			</div>
-		</div>
-		<div class="panel">
-			<div>
-				<div class="header background tan">
-					Contact us
-				</div>
-				<div>
-					This form sends an email to <a href="mailto:email@example.com">email@example.com</a>
-				</div>
-				<table class="wide">
-					<tr>
-						<td colspan="2">
-							<textarea class="wide"></textarea>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="text" class="wide"/>
-						</td>
-						<td>
-							&nbsp;<span class="important">*</span> Name
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<input type="text" class="wide"/>
-						</td>
-						<td>
-							&nbsp;<span class="important">*</span> Email
-						</td>
-					</tr>
-				</table>
-				<div class="middle">
-					<button class="button wide">
-						Send email
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			&copy; 2017 API Consulting &amp; Investigations LLC
-		</div>
-	</body>
-	<script src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-	<script>
-		// Start smooth scroll
-		new SmoothScroll("a[href*='#']");
-	</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            /**
+             * Adds a new <link> element to the <head> that is asynchronously loaded.
+             * https://stackoverflow.com/a/40314216/3063273
+             */
+            function makeAsyncLink(href) {
+                const head = document.getElementsByTagName("head")[0];
+                const link = document.createElement("link");
+                link.setAttribute("href", href);
+                link.setAttribute("media", "none");
+                link.setAttribute("onload", "media=\"all\"");
+                link.setAttribute("rel", "stylesheet");
+                head.appendChild(link);
+            }
+
+            makeAsyncLink("node_modules/normalize.css/normalize.css");
+            makeAsyncLink("style/font-awesome.css");
+        </script>
+        <noscript>
+            <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+            <link rel="stylesheet" href="style/font-awesome.css">
+        </noscript>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" media="(max-width:910px)" href="style/910.css">
+        <link rel="stylesheet" media="(min-width:1300px) and (min-height:420px)" href="style/1300.css">
+        <link rel="stylesheet" media="(orientation: landscape)" href="style/landscape.css">
+    </head>
+    <body>
+        <div id="top">
+            <div id="title">
+                API Consulting &amp; Investigations
+            </div>
+            <div id="motto">
+                Motto motto: motto motto, motto motto, motto motto
+            </div>
+            <a id="button" href="#middle">&#9660;</a>
+        </div>
+        <div id="middle">
+            <div class="row">
+                <div class="column section" id="investigative-services">
+                    <div class="title">
+                        Investigative services
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Fraud and embezzlement</li>
+                            <li>Background and employment checks</li>
+                            <li>Surveillance</li>
+                            <li>Identity theft</li>
+                            <li>Computer intrusion</li>
+                            <li>Intellectual property rights violations</li>
+                            <li>Income and asset tracing and verification</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column section" id="background-and-experience">
+                    <div class="title">
+                        Background and experience
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Licensed Private Investigator</li>
+                            <li>Retired FBI Special Agent of over 30 years</li>
+                            <li>B.S. Business Administration / Accounting graduate</li>
+                        </ul>
+                        <ul>
+                            <li>Specialized in fraud and financial investigations</li>
+                            <li>Collected evidence through discrete surveillance techniques</li>
+                            <li>Testified in court at Federal and State levels leading to convictions and asset forfeitures</li>
+                            <li>Obtained cooperation and confessions through interviews and interrogations</li>
+                            <li>Successfully prosecuted top criminals</li>
+                            <li>Led cyber and intellectual property rights investigations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column section" id="contact-us">
+                    <div class="title">
+                        Contact us
+                    </div>
+                    <form class="content">
+                        <div>
+                            This form sends an email to:
+                            <a target="_blank" href="mailto:email@example.com">
+                                <span class="snippet">
+                                <i class="fa fa-envelope-o"></i>
+                                email@example.com</span>
+                            </a>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-sticky-note-o"></i>
+                                </td>
+                                <td colspan="2">
+                                    <textarea name="message" id="message"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-address-card-o"></i>
+                                </td>
+                                <td>
+                                    <input type="text" name="name" id="name"/>
+                                </td>
+                                <td>
+                                    <label for="name">
+                                        Name
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-envelope-o"></i>
+                                </td>
+                                <td>
+                                    <input type="text" name="email" id="email"/>
+                                </td>
+                                <td>
+                                    <label for="email">
+                                        Email
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                        <button type="submit" class="wide" id="send-email">
+                            <i class="fa fa-send" aria-hidden="true"></i> Send email
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        <div id="footer">
+            &copy; 2017 API Consulting &amp; Investigations LLC
+        </div>
+    </body>
+    <script>
+        function startSmoothScroll() {
+            // Start smooth scroll
+            new SmoothScroll("a[href*='#']");
+        }
+    </script>
+	<script async onload="startSmoothScroll()" src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </html>
