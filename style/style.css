@@ -135,7 +135,7 @@ html {
       color: white;
       font-size: 0.5em;
       text-align: right; }
-  html a {
+  html a, html a:not(.plain) {
     color: #2A60A4;
     text-decoration: none; }
   html input[type=text], html textarea {

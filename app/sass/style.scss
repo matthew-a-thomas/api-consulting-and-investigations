@@ -149,6 +149,7 @@ html {
         text-decoration: none;
     }
     a:not(.plain) {
+        @extend a;
         @extend .button;
     }
 
