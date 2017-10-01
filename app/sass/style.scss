@@ -117,8 +117,20 @@ html {
                     @extend %common;
                 }
 
+                #recaptcha {
+                    width: 100%;
+
+                    > div {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: 0;
+                    }
+                }
+
                 #send-email {
-                    float: right;
+                    display: none;
+                    margin-left: auto;
+                    margin-right: 0;
                 }
 
                 table {

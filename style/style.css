@@ -40,6 +40,9 @@ a.button, html a:not(.plain) {
   #button:active, .button:active, html a:active:not(.plain), html button:active, html input[type="button"]:active, html input[type="submit"]:active {
     background-color: #fafafa;
     box-shadow: 0em 0.2em 1em rgba(0, 0, 0, 0.5); }
+  #button:disabled, .button:disabled, html a:disabled:not(.plain), html button:disabled, html input[type="button"]:disabled, html input[type="submit"]:disabled {
+    background-color: #e6e6e6;
+    color: gray; }
   #button.wide, .wide.button, html a.wide:not(.plain), html button.wide, html input.wide[type="button"], html input.wide[type="submit"] {
     display: block;
     margin-left: 0;
@@ -122,8 +125,16 @@ html {
         html > body > #middle #contact-us #message {
           height: 10em;
           vertical-align: top; }
+        html > body > #middle #contact-us #recaptcha {
+          width: 100%; }
+          html > body > #middle #contact-us #recaptcha > div {
+            display: block;
+            margin-left: auto;
+            margin-right: 0; }
         html > body > #middle #contact-us #send-email {
-          float: right; }
+          display: none;
+          margin-left: auto;
+          margin-right: 0; }
         html > body > #middle #contact-us table {
           width: 100%; }
           html > body > #middle #contact-us table td:nth-child(2) {

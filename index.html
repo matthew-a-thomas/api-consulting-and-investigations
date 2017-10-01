@@ -131,6 +131,11 @@
                                     </td>
                                 </tr>
                             </table>
+                            <div
+                                class="g-recaptcha"
+                                data-callback="showSendButton"
+                                data-sitekey="6LcjGjAUAAAAAK4sMxfxKp-YlfDXvS5C54OMOEf7"
+                                id="recaptcha"></div>
                             <button type="submit" id="send-email">
                                 <i class="fa fa-send" aria-hidden="true"></i> Send email
                             </button>
@@ -155,6 +160,14 @@
             const contactForm = document.getElementById("contact-form");
             contactForm.style.display = "";
         })();
+
+        function showSendButton() {
+            const recaptcha = document.getElementById("recaptcha");
+            const sendButton = document.getElementById("send-email");
+
+            recaptcha.style.display = "none";
+            sendButton.style.display = "block";
+        }
 
         function startJQuery() {
             // Keep the #down-arrow sticky
@@ -182,6 +195,7 @@
             new SmoothScroll("a[href*='#']");
         }
     </script>
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
     <script async onload="startJQuery()" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script async onload="startSmoothScroll()" src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </html>
