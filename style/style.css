@@ -1,5 +1,5 @@
-#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html input[type=text], html textarea {
-  border-radius: 0.1em; }
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, html > body > #middle .section .title, html input[type=text], html textarea {
+  border-radius: 0.2rem; }
 
 #button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
   margin: 0.5em; }
@@ -7,7 +7,7 @@
 #button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html > body > #middle .section > .content, html > body > #middle #contact-us #message, html > body > #middle #contact-us #name, html > body > #middle #contact-us #email, html > body > #footer {
   padding: 0.5em; }
 
-#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"] {
   border-width: 0px;
   display: inline-block; }
 
@@ -54,8 +54,8 @@ a.button, html a {
 #flex-down, html > body > #top {
   flex-direction: column; }
 
-#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section .title, html input[type=text], html textarea {
-  border-radius: 0.1em; }
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, html > body > #middle .section .title, html input[type=text], html textarea {
+  border-radius: 0.2rem; }
 
 #button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
   margin: 0.5em; }
@@ -90,16 +90,19 @@ html {
         justify-content: space-around; }
         html > body > #middle .row > .column {
           flex: 1; }
-      html > body > #middle .section .title {
-        background-color: #011d43;
+      html > body > #middle .section {
         border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        color: white;
-        display: block;
-        font-size: 2em;
-        text-align: center; }
-      html > body > #middle .section > .content {
-        background-color: white; }
+        border-bottom-right-radius: 0; }
+        html > body > #middle .section .title {
+          background-color: #011d43;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          color: white;
+          display: block;
+          font-size: 2em;
+          text-align: center; }
+        html > body > #middle .section > .content {
+          background-color: white; }
       html > body > #middle #investigative-services {
         margin-right: 0.25em; }
       html > body > #middle #background-and-experience {

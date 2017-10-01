@@ -50,10 +50,15 @@ html {
 
             .section {
                 @extend %margin;
+                @extend %round;
                 @extend %shadow;
 
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+
                 .title {
-                    @extend %flat;
+                    @extend %padding;
+                    @extend %round;
 
                     background-color: $darkest-blue;
                     border-bottom-left-radius: 0;
