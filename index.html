@@ -26,6 +26,13 @@
             <link rel="stylesheet" href="style/font-awesome.css">
         </noscript>
         <link rel="stylesheet" href="style/style.css">
+        <noscript>
+            <style>
+                html > body > #top > #down-arrow {
+                    position: absolute;
+                }
+            </style>
+        </noscript>
         <link rel="stylesheet" media="(max-width:910px)" href="style/910.css">
         <link rel="stylesheet" media="(min-width:1300px) and (min-height:420px)" href="style/1300.css">
         <link rel="stylesheet" media="(orientation: landscape)" href="style/landscape.css">
@@ -136,10 +143,30 @@
         </div>
     </body>
     <script>
+        function startJQuery() {
+            // Keep the #down-arrow sticky
+            const downArrow = $("#down-arrow");
+            const top = $("#top");
+            var triggered = false;
+            function makeDownArrowSticky() {
+                if (triggered)
+                    return;
+                const bottomOfDownArrow = downArrow.offset().top + downArrow.height();
+                const bottomOfTop = top.offset().top + top.height();
+                if (bottomOfDownArrow > bottomOfTop) {
+                    downArrow.css("position", "absolute");
+                    triggered = true;
+                }
+            }
+            $(window).ready(makeDownArrowSticky);
+            $(window).scroll(makeDownArrowSticky);
+        }
+
         function startSmoothScroll() {
             // Start smooth scroll
             new SmoothScroll("a[href*='#']");
         }
     </script>
-	<script async onload="startSmoothScroll()" src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script async onload="startJQuery()" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script async onload="startSmoothScroll()" src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </html>
