@@ -20,6 +20,7 @@ html {
             background-color: $darkest-blue;
             color: white;
             height: 100vh;
+            position: relative;
 
             > #title {
                 font-size: 6vw;
@@ -28,6 +29,14 @@ html {
             > #motto {
                 font-size: 3vw;
                 font-style: italic;
+            }
+
+            > #down-arrow {
+                bottom: 0;
+                color: white;
+                display: block;
+                font-size: 5em;
+                position: absolute;
             }
         }
 
@@ -136,9 +145,11 @@ html {
     }
 
     a {
-        @extend .button;
-
         color: $lighter-blue;
+        text-decoration: none;
+    }
+    a:not(.plain) {
+        @extend .button;
     }
 
     button, input[type="button"], input[type="submit"] {
