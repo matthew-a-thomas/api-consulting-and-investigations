@@ -3,7 +3,7 @@ html {
     > body {
         > #middle {
             .row {
-                @extend #flex-down;
+                @extend %flex-down;
             }
 
             .section {

@@ -15,7 +15,7 @@
   cursor: default;
   user-select: none; }
 
-#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
+#button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #top, html > body > #middle .section {
   box-shadow: 0em 0.05em 0.2em rgba(0, 0, 0, 0.75); }
 
 #button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
@@ -46,12 +46,12 @@ a.button, html a {
     margin-right: 0;
     width: 100%; }
 
-#flex, #flex-down, html > body > #top, html > body > #middle .row {
+html > body > #top, html > body > #middle .row {
   align-items: center;
   display: flex;
   justify-content: center; }
 
-#flex-down, html > body > #top {
+html > body > #top {
   flex-direction: column; }
 
 #button, .button, html a, html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, html > body > #middle .section .title, html input[type=text], html textarea {

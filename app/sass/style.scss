@@ -13,13 +13,12 @@ html {
         margin: 0;
 
         > #top {
-            $background-color: $darkest-blue;
-            $text-color: white;
-
-            @extend #flex-down;
             @include background-image($img-stars);
-            background-color: $background-color;
-            color: $text-color;
+            @extend %flex-down;
+            @extend %shadow;
+
+            background-color: $darkest-blue;
+            color: white;
             height: 100vh;
 
             > #title {
@@ -38,7 +37,7 @@ html {
             max-width: 120ch;
 
             .row {
-                @extend #flex;
+                @extend %flex;
 
                 align-items: stretch;
                 justify-content: space-around;

@@ -1,9 +1,9 @@
-#flex, #flex-down, html > body > #middle .row {
+html > body > #middle .row {
   align-items: center;
   display: flex;
   justify-content: center; }
 
-#flex-down, html > body > #middle .row {
+html > body > #middle .row {
   flex-direction: column; }
 
 html > body > #middle .section {
