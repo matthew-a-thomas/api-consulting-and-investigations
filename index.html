@@ -93,73 +93,88 @@
                     <div class="title">
                         Contact Us
                     </div>
-                    <form class="content">
+                    <div class="content">
                         <div>
                             <a target="_blank" href="mailto:email@example.com">
                                 <i class="fa fa-envelope-o"></i>
                                 email@example.com
                             </a>
                         </div>
-                        <div style="margin: auto; font-size: 1em">
-                            Or, send a message below:
-                        </div>
-                        <table>
-                            <tr>
-                                <td colspan="2">
-                                    <textarea name="message" id="message"></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="name">
-                                        Name
-                                    </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="name" id="name"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label for="email">
-                                        Email
-                                    </label>
-                                </td>
-                                <td>
-                                    <input type="text" name="email" id="email"/>
-                                </td>
-                            </tr>
-                        </table>
-                        <button type="submit" id="send-email">
-                            <i class="fa fa-send" aria-hidden="true"></i> Send email
-                        </button>
-                    </form>
+                        <form id="contact-form" style="display:none">
+                            <div style="margin: auto; font-size: 1em">
+                                Or, send a message below:
+                            </div>
+                            <table>
+                                <tr>
+                                    <td colspan="2">
+                                        <textarea name="message" id="message"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="name">
+                                            Name
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="name" id="name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email">
+                                            Email
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="email" id="email"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button type="submit" id="send-email">
+                                <i class="fa fa-send" aria-hidden="true"></i> Send email
+                            </button>
+                        </form>
+                        <noscript>
+                            <div>
+                                <p>A contact form will be visible here once you <a class="plain" href="https://www.google.com/search?q=enable+JavaScript">enable JavaScript in your browser</a>.</p>
+                                <p>In the meantime, feel free to use the above email address.</p>
+                            </div>
+                        </noscript>
+                    </div>
                 </div>
             </div>
-            
         </div>
         <div id="footer">
             &copy; 2017 API Consulting &amp; Investigations LLC
         </div>
     </body>
     <script>
+        // Show the contact form
+        (function() {
+            const contactForm = document.getElementById("contact-form");
+            contactForm.style.display = "";
+        })();
+
         function startJQuery() {
             // Keep the #down-arrow sticky
-            const downArrow = $("#down-arrow");
-            const top = $("#top");
-            var triggered = false;
-            function makeDownArrowSticky() {
-                if (triggered)
-                    return;
-                const bottomOfDownArrow = downArrow.offset().top + downArrow.height();
-                const bottomOfTop = top.offset().top + top.height();
-                if (bottomOfDownArrow > bottomOfTop) {
-                    downArrow.css("position", "absolute");
-                    triggered = true;
+            (function() {
+                const downArrow = $("#down-arrow");
+                const top = $("#top");
+                var triggered = false;
+                function makeDownArrowSticky() {
+                    if (triggered)
+                        return;
+                    const bottomOfDownArrow = downArrow.offset().top + downArrow.height();
+                    const bottomOfTop = top.offset().top + top.height();
+                    if (bottomOfDownArrow > bottomOfTop) {
+                        downArrow.css("position", "absolute");
+                        triggered = true;
+                    }
                 }
-            }
-            $(window).ready(makeDownArrowSticky);
-            $(window).scroll(makeDownArrowSticky);
+                $(window).ready(makeDownArrowSticky);
+                $(window).scroll(makeDownArrowSticky);
+            })();
         }
 
         function startSmoothScroll() {
