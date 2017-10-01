@@ -119,9 +119,9 @@ html {
           float: right; }
         html > body > #middle #contact-us table {
           width: 100%; }
-          html > body > #middle #contact-us table td:nth-child(1) {
+          html > body > #middle #contact-us table td:nth-child(2) {
             width: 100%; }
-          html > body > #middle #contact-us table td:not(:nth-child(1)) {
+          html > body > #middle #contact-us table td:not(:nth-child(2)) {
             width: auto; }
     html > body > #footer {
       background-color: black;
