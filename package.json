@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/matthew-a-thomas/api-consulting-and-investigations#readme",
   "dependencies": {
+    "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
     "smooth-scroll": "^12.1.5"
   }
