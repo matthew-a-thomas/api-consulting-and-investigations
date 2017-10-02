@@ -81,9 +81,9 @@ html {
       height: 100vh;
       position: relative; }
       html > body > #top > #title {
-        font-size: 6vw; }
+        font-size: 6vmin; }
       html > body > #top > #motto {
-        font-size: 3vw;
+        font-size: 3vmin;
         font-style: italic; }
       html > body > #top > #down-arrow-container {
         height: 100%;
