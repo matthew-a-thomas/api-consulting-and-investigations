@@ -125,16 +125,13 @@ html {
         html > body > #middle #contact-us #message {
           height: 10em;
           vertical-align: top; }
-        html > body > #middle #contact-us #recaptcha {
-          width: 100%; }
-          html > body > #middle #contact-us #recaptcha > div {
-            display: block;
-            margin-left: auto;
-            margin-right: 0; }
+        html > body > #middle #contact-us .grecaptcha-badge {
+          display: none; }
         html > body > #middle #contact-us #send-email {
-          display: none;
           margin-left: auto;
           margin-right: 0; }
+          html > body > #middle #contact-us #send-email > #wording-sending-email {
+            display: none; }
         html > body > #middle #contact-us table {
           width: 100%; }
           html > body > #middle #contact-us table td:nth-child(2) {
@@ -142,8 +139,6 @@ html {
           html > body > #middle #contact-us table td:not(:nth-child(2)) {
             width: auto; }
     html > body > #footer {
-      background-color: black;
-      color: white;
       font-size: 0.5em;
       text-align: right; }
   html a, html a:not(.plain) {

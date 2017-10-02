@@ -131,13 +131,18 @@
                                     </td>
                                 </tr>
                             </table>
-                            <div
+                            <!-- https://developers.google.com/recaptcha/docs/invisible -->
+                            <button
                                 class="g-recaptcha"
-                                data-callback="showSendButton"
-                                data-sitekey="6LcjGjAUAAAAAK4sMxfxKp-YlfDXvS5C54OMOEf7"
-                                id="recaptcha"></div>
-                            <button type="submit" id="send-email">
-                                <i class="fa fa-send" aria-hidden="true"></i> Send email
+                                data-badge="inline"
+                                data-sitekey="6Ld4xTIUAAAAAKMc8_U6JUBhcwF1egyL_YU3l5v3"
+                                data-callback="submitForm"
+                                disabled="true"
+                                id="send-email"
+                                onclick="handleSendEmailClicked()">
+                                <i class="fa fa-send" aria-hidden="true"></i>
+                                <span id="wording-send-email">Send email</span>
+                                <span id="wording-sending-email">Sending email...</span>
                             </button>
                         </form>
                         <noscript>
@@ -151,7 +156,12 @@
             </div>
         </div>
         <div id="footer">
-            &copy; 2017 API Consulting &amp; Investigations LLC
+            <div>
+                &copy; 2017 API Consulting &amp; Investigations LLC
+            </div>
+            <div>
+                This site implements an Invisible reCAPTCHA; your use of the Invisible reCAPTCHA (e.g. by sending a message through the form above) is subject to the <a class="plain" href="https://www.google.com/intl/en/policies/privacy/">Google Privacy Policy</a> and <a class="plain" href="https://www.google.com/intl/en/policies/terms/">Terms of Use</a>.
+            </div>
         </div>
     </body>
     <script>
@@ -161,14 +171,31 @@
             contactForm.style.display = "";
         })();
 
-        function showSendButton() {
-            const recaptcha = document.getElementById("recaptcha");
+        /**
+         * Executed immediately after the "Send Email" button is clicked.
+         * Changes the message within that button, and disables it.
+         */
+        function handleSendEmailClicked() {
             const sendButton = document.getElementById("send-email");
+            sendButton.disabled = true;
 
-            recaptcha.style.display = "none";
-            sendButton.style.display = "block";
+            const wordingSendEmail = document.getElementById("wording-send-email");
+            wordingSendEmail.style.display = "none";
+            const wordingSendingEmail = document.getElementById("wording-sending-email");
+            wordingSendingEmail.style.display = "inline";
         }
 
+        /**
+         * Submits the "Contact Us" form
+         */
+        function submitForm() {
+            const form = document.forms[0]
+            form.submit();
+        }
+
+        /**
+         * Executed right after jQuery has been loaded
+         */
         function startJQuery() {
             // Keep the #down-arrow sticky
             (function() {
@@ -190,6 +217,9 @@
             })();
         }
 
+        /**
+         * Executed right after SmoothScroll has been loaded
+         */
         function startSmoothScroll() {
             // Start smooth scroll
             new SmoothScroll("a[href*='#']");
