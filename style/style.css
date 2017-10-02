@@ -96,11 +96,13 @@ html {
           color: white;
           font-size: 5em;
           margin-top: -1em;
+          position: absolute;
           position: sticky; }
     html > body > #middle {
       margin-left: auto;
       margin-right: auto;
-      max-width: 120ch; }
+      max-width: 120ch;
+      position: relative; }
       html > body > #middle .row {
         align-items: stretch;
         justify-content: space-around; }

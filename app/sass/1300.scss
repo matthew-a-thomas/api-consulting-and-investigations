@@ -1,7 +1,14 @@
 html {
     > body {
+        > #top {
+            > #down-arrow-container {
+                > .spacer {
+                    height: calc(100% - 10rem);
+                }
+            }
+        }
         > #middle {
-            margin-top: -10em;
+            margin-top: -10rem;
         }
     }
 }
