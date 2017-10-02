@@ -26,13 +26,6 @@
             <link rel="stylesheet" href="style/font-awesome.css">
         </noscript>
         <link rel="stylesheet" href="style/style.css">
-        <noscript>
-            <style>
-                html > body > #top > #down-arrow {
-                    position: absolute;
-                }
-            </style>
-        </noscript>
         <link rel="stylesheet" media="(max-width:910px)" href="style/910.css">
         <link rel="stylesheet" media="(min-width:1300px) and (min-height:420px)" href="style/1300.css">
         <link rel="stylesheet" media="(orientation: landscape)" href="style/landscape.css">
@@ -45,9 +38,12 @@
             <div id="motto">
                 Motto motto: motto motto, motto motto, motto motto
             </div>
-            <a class="plain" href="#investigative-services" id="down-arrow">
-                <i class="fa fa-arrow-circle-o-down"></i>
-            </a>
+            <div id="down-arrow-container">
+                <div class="spacer"></div>
+                <a class="plain" href="#investigative-services" id="down-arrow">
+                    <i class="fa fa-arrow-circle-o-down"></i>
+                </a>
+            </div>
         </div>
         <div id="middle">
             <div class="row">
@@ -194,30 +190,6 @@
         }
 
         /**
-         * Executed right after jQuery has been loaded
-         */
-        function startJQuery() {
-            // Keep the #down-arrow sticky
-            (function() {
-                const downArrow = $("#down-arrow");
-                const top = $("#top");
-                var triggered = false;
-                function makeDownArrowSticky() {
-                    if (triggered)
-                        return;
-                    const bottomOfDownArrow = downArrow.offset().top + downArrow.height();
-                    const bottomOfTop = top.offset().top + top.height();
-                    if (bottomOfDownArrow > bottomOfTop) {
-                        downArrow.css("position", "absolute");
-                        triggered = true;
-                    }
-                }
-                $(window).ready(makeDownArrowSticky);
-                $(window).scroll(makeDownArrowSticky);
-            })();
-        }
-
-        /**
          * Executed right after SmoothScroll has been loaded
          */
         function startSmoothScroll() {
@@ -226,6 +198,5 @@
         }
     </script>
     <script async src="https://www.google.com/recaptcha/api.js"></script>
-    <script async onload="startJQuery()" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script async onload="startSmoothScroll()" src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </html>

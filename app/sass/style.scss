@@ -31,12 +31,24 @@ html {
                 font-style: italic;
             }
 
-            > #down-arrow {
-                bottom: 0;
-                color: white;
-                display: block;
-                font-size: 5em;
-                position: fixed;
+            > #down-arrow-container {
+                height: 100%;
+                position: absolute;
+                width: 100%;
+
+                > .spacer {
+                    height: 100%;
+                }
+
+                > #down-arrow {
+                    @extend %flex;
+
+                    bottom: 0;
+                    color: white;
+                    font-size: 5em;
+                    margin-top: -1em;
+                    position: sticky;
+                }
             }
         }
 

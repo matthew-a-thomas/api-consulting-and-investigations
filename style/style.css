@@ -49,7 +49,7 @@ a.button, html a:not(.plain) {
     margin-right: 0;
     width: 100%; }
 
-html > body > #top, html > body > #middle .row {
+html > body > #top, html > body > #top > #down-arrow-container > #down-arrow, html > body > #middle .row {
   align-items: center;
   display: flex;
   justify-content: center; }
@@ -85,12 +85,18 @@ html {
       html > body > #top > #motto {
         font-size: 3vw;
         font-style: italic; }
-      html > body > #top > #down-arrow {
-        bottom: 0;
-        color: white;
-        display: block;
-        font-size: 5em;
-        position: fixed; }
+      html > body > #top > #down-arrow-container {
+        height: 100%;
+        position: absolute;
+        width: 100%; }
+        html > body > #top > #down-arrow-container > .spacer {
+          height: 100%; }
+        html > body > #top > #down-arrow-container > #down-arrow {
+          bottom: 0;
+          color: white;
+          font-size: 5em;
+          margin-top: -1em;
+          position: sticky; }
     html > body > #middle {
       margin-left: auto;
       margin-right: auto;
