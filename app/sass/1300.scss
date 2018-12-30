@@ -1,14 +1,14 @@
 html {
+    font-size: 1.3vw;
+
     > body {
         > #top {
             > #down-arrow-container {
-                > .spacer {
-                    height: calc(100% - 10rem);
-                }
+                display: none;
             }
         }
         > #middle {
-            margin-top: -10rem;
+            margin-top: -8vw;
         }
     }
 }
