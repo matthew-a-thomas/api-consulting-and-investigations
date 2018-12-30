@@ -15,7 +15,6 @@ html {
         > #top {
             @include background-image($img-stars);
             @extend %flex-down;
-            @extend %shadow;
 
             background-color: $title-background;
             color: $title-foreground;

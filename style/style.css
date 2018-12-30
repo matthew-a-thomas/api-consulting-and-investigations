@@ -15,7 +15,7 @@
   cursor: default;
   user-select: none; }
 
-#button, .button, html a:not(.plain), html button, html input[type="button"], html input[type="submit"], html > body > #top, html > body > #middle .section {
+#button, .button, html a:not(.plain), html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
   box-shadow: 0em 0.05em 0.2em rgba(0, 0, 0, 0.75); }
 
 #button, .button, html a:not(.plain), html button, html input[type="button"], html input[type="submit"], html > body > #middle .section {
