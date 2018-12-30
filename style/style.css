@@ -72,12 +72,12 @@ html {
     padding: 0;
     margin: 0; }
     html > body > #top {
-      background-image: url("../img/stars.jpg");
+      background-image: url("../img/stars.png");
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-color: #011d43;
-      color: white;
+      background-color: white;
+      color: black;
       height: 100vh;
       position: relative; }
       html > body > #top > #title {
@@ -93,7 +93,7 @@ html {
           height: 100%; }
         html > body > #top > #down-arrow-container > #down-arrow {
           bottom: 0;
-          color: white;
+          color: black;
           font-size: 5em;
           margin-top: -1em;
           position: absolute;
@@ -112,7 +112,7 @@ html {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0; }
         html > body > #middle .section .title {
-          background-color: #011d43;
+          background-color: black;
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
           color: white;
@@ -150,7 +150,7 @@ html {
       font-size: 0.5em;
       text-align: right; }
   html a, html a:not(.plain) {
-    color: #2A60A4;
+    color: #0249A8;
     text-decoration: none; }
   html input[type=text], html textarea {
     border: thin solid rgba(0, 0, 0, 0.5); }

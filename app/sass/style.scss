@@ -17,8 +17,8 @@ html {
             @extend %flex-down;
             @extend %shadow;
 
-            background-color: $darkest-blue;
-            color: white;
+            background-color: $title-background;
+            color: $title-foreground;
             height: 100vh;
             position: relative;
 
@@ -44,7 +44,7 @@ html {
                     @extend %flex;
 
                     bottom: 0;
-                    color: white;
+                    color: $title-foreground;
                     font-size: 5em;
                     margin-top: -1em;
                     position: absolute;
@@ -82,7 +82,7 @@ html {
                     @extend %padding;
                     @extend %round;
 
-                    background-color: $darkest-blue;
+                    background-color: $primary-accent;
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
                     color: white;
@@ -166,7 +166,7 @@ html {
     }
 
     a {
-        color: $lighter-blue;
+        color: $primary-link;
         text-decoration: none;
     }
     a:not(.plain) {
