@@ -4,5 +4,5 @@ $lighter-blue: #2A60A4;
 
 $title-background: white;
 $title-foreground: black;
-$primary-accent: black;
+$primary-accent: lighten(black, 20%);
 $primary-link: $darker-blue;

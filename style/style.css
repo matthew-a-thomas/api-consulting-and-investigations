@@ -49,12 +49,12 @@ a.button, html a:not(.plain) {
     margin-right: 0;
     width: 100%; }
 
-html > body > #top, html > body > #top > #down-arrow-container > #down-arrow, html > body > #middle .row {
+html > body > #top, html > body > #top > #title-and-motto-container, html > body > #top > #down-arrow-container > #down-arrow, html > body > #middle .row {
   align-items: center;
   display: flex;
   justify-content: center; }
 
-html > body > #top {
+html > body > #top, html > body > #top > #title-and-motto-container {
   flex-direction: column; }
 
 #button, .button, html a:not(.plain), html button, html input[type="button"], html input[type="submit"], html > body > #middle .section, html > body > #middle .section .title, html input[type=text], html textarea {
@@ -80,11 +80,17 @@ html {
       color: black;
       height: 100vh;
       position: relative; }
-      html > body > #top > #title {
-        font-size: 6vw; }
-      html > body > #top > #motto {
-        font-size: 3vw;
-        font-style: italic; }
+      html > body > #top > #title-and-motto-container {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 5vw 0;
+        width: 100%; }
+        html > body > #top > #title-and-motto-container > #title {
+          font-size: 5vw;
+          font-weight: 900; }
+        html > body > #top > #title-and-motto-container > #motto {
+          font-size: 3vw;
+          font-style: italic;
+          margin-top: 3vw; }
       html > body > #top > #down-arrow-container {
         height: 100%;
         position: absolute;
@@ -93,7 +99,7 @@ html {
           height: 100%; }
         html > body > #top > #down-arrow-container > #down-arrow {
           bottom: 0;
-          color: black;
+          color: #333333;
           font-size: 5em;
           margin-top: -1em;
           position: absolute;
@@ -112,7 +118,7 @@ html {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0; }
         html > body > #middle .section .title {
-          background-color: black;
+          background-color: #333333;
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
           color: white;
