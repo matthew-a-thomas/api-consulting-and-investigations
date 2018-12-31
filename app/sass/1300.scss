@@ -1,14 +1,12 @@
 html {
-    font-size: 1.3vw;
-
-    > body {
-        > #top {
-            > #down-arrow-container {
+    body {
+        #top {
+            #down-arrow-container {
                 display: none;
             }
         }
-        > #middle {
-            margin-top: -8vw;
+        #middle {
+            margin-top: -7em;
         }
     }
 }

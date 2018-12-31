@@ -1,7 +1,7 @@
 @import 'positioning';
 html {
-    > body {
-        > #middle {
+    body {
+        #middle {
             .row {
                 @extend %flex-down;
             }

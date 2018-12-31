@@ -2,7 +2,9 @@ $darker-blue: #0249A8;
 $darkest-blue: darken($darker-blue, 20%);
 $lighter-blue: #2A60A4;
 
-$title-background: white;
-$title-foreground: black;
+$error-background: lighten(red, 40%);
+$error-foreground: darken(red, 20%);
 $primary-accent: lighten(black, 20%);
 $primary-link: $darker-blue;
+$title-background: white;
+$title-foreground: black;
