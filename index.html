@@ -127,6 +127,11 @@
                                     </td>
                                 </tr>
                             </table>
+
+                            <div class="error">
+                                Please fill out all the fields above.
+                            </div>
+
                             <!-- https://developers.google.com/recaptcha/docs/invisible -->
                             <button
                                 class="g-recaptcha"
@@ -137,8 +142,9 @@
                                 id="send-email"
                                 onclick="handleSendEmailClicked()">
                                 <i class="fa fa-send" aria-hidden="true"></i>
-                                <span id="wording-send-email">Send email</span>
-                                <span id="wording-sending-email">Sending email...</span>
+                                <span class="wording" id="wording-send-email">Send email</span>
+                                <span class="wording" id="wording-sending-email">Sending email...</span>
+                                <span class="wording" id="wording-sent-email">Sent!</span>
                             </button>
                         </form>
                         <noscript>
