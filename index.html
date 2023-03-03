@@ -87,114 +87,32 @@
             <div class="row">
                 <div class="column section" id="contact-us">
                     <div class="title">
-                        Contact
+                        Contact Anthony Aubermann
                     </div>
                     <div class="content">
                         <div>
-                            <a target="_blank" href="mailto:email@example.com">
+                            <a target="_blank" href="mailto:apicai2442@gmail.com">
                                 <i class="fa fa-envelope-o"></i>
-                                email@example.com
+                                apicai2442@gmail.com
                             </a>
                         </div>
-                        <form id="contact-form" style="display:none">
-                            <div style="margin: auto; font-size: 1em">
-                                Or, send a message below:
-                            </div>
-                            <table>
-                                <tr>
-                                    <td colspan="2">
-                                        <textarea name="message" id="message"></textarea>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="name">
-                                            Name
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <input type="text" name="name" id="name"/>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="email">
-                                            Email
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <input type="text" name="email" id="email"/>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <!-- <div class="error">
-                                Please fill out all the fields above.
-                            </div> -->
-
-                            <!-- https://developers.google.com/recaptcha/docs/invisible -->
-                            <button
-                                class="g-recaptcha"
-                                data-badge="inline"
-                                data-sitekey="6Ld4xTIUAAAAAKMc8_U6JUBhcwF1egyL_YU3l5v3"
-                                data-callback="submitForm"
-                                disabled="true"
-                                id="send-email"
-                                onclick="handleSendEmailClicked()">
-                                <i class="fa fa-send" aria-hidden="true"></i>
-                                <span class="wording" id="wording-send-email">Send email</span>
-                                <span class="wording" id="wording-sending-email">Sending email...</span>
-                                <span class="wording" id="wording-sent-email">Sent!</span>
-                            </button>
-                        </form>
-                        <noscript>
-                            <div>
-                                <p>A contact form will be visible here once you <a class="plain" href="https://www.google.com/search?q=enable+JavaScript">enable JavaScript in your browser</a>.</p>
-                                <p>In the meantime, feel free to use the above email address.</p>
-                            </div>
-                        </noscript>
+                        <div>
+                            <a target="_blank" href="tel:+1(772) 913-5280">
+                                <i class="fa fa-phone"></i>
+                                +1 (772) 913-5280
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="footer">
             <div>
-                &copy; 2019 API Consulting &amp; Investigations LLC
-            </div>
-            <div>
-                This site implements an Invisible reCAPTCHA; your use of the Invisible reCAPTCHA (e.g. by sending a message through the form above) is subject to the <a class="plain" href="https://www.google.com/intl/en/policies/privacy/">Google Privacy Policy</a> and <a class="plain" href="https://www.google.com/intl/en/policies/terms/">Terms of Use</a>.
+                &copy; 2023 API Consulting &amp; Investigations LLC
             </div>
         </div>
     </body>
     <script>
-        // Show the contact form
-        (function() {
-            const contactForm = document.getElementById("contact-form");
-            contactForm.style.display = "";
-        })();
-
-        /**
-         * Executed immediately after the "Send Email" button is clicked.
-         * Changes the message within that button, and disables it.
-         */
-        function handleSendEmailClicked() {
-            const sendButton = document.getElementById("send-email");
-            sendButton.disabled = true;
-
-            const wordingSendEmail = document.getElementById("wording-send-email");
-            wordingSendEmail.style.display = "none";
-            const wordingSendingEmail = document.getElementById("wording-sending-email");
-            wordingSendingEmail.style.display = "inline";
-        }
-
-        /**
-         * Submits the "Contact Us" form
-         */
-        function submitForm() {
-            const form = document.forms[0]
-            form.submit();
-        }
-
         /**
          * Executed right after SmoothScroll has been loaded
          */
@@ -203,6 +121,5 @@
             new SmoothScroll("a[href*='#']");
         }
     </script>
-    <script async src="https://www.google.com/recaptcha/api.js"></script>
     <script async onload="startSmoothScroll()" src="node_modules/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </html>
