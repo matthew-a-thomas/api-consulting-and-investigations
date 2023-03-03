@@ -45,7 +45,7 @@ html {
         #background {
             @extend .parallax;
             @extend .item;
-            @include background-image($img-stars);
+            @include background-image($img-bg);
 
             height: 200vh;
             left: -50vw;
