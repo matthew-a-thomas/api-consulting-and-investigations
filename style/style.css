@@ -1,0 +1,253 @@
+html input[type=text], html textarea, html body #middle .section .title, html body #middle .section, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  border-radius: 0.2rem;
+}
+
+html body #middle .section, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  margin: 0.5em;
+}
+
+html body #footer, html body #middle #contact-us #email, html body #middle #contact-us #name, html body #middle #contact-us #message, html body #middle .section .content, html body #middle .section .title, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  padding: 0.5em;
+}
+
+#button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  border-width: 0px;
+  display: inline-block;
+}
+
+#button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  cursor: default;
+  user-select: none;
+}
+
+html body #middle .section, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  box-shadow: 0em 0.05em 0.2em rgba(0, 0, 0, 0.75);
+}
+
+html body #middle .section, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  margin: 0.5em;
+}
+
+html body #footer, html body #middle #contact-us #email, html body #middle #contact-us #name, html body #middle #contact-us #message, html body #middle .section .content, html body #middle .section .title, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  padding: 0.5em;
+}
+
+a.button, html a:not(.plain) {
+  cursor: pointer;
+}
+
+#button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  background-color: white;
+  color: black;
+  font-size: inherit;
+  font-weight: bold;
+  min-width: 10ch;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.1s, box-shadow 0.2s;
+}
+#button:active, html button:active, html input[type=button]:active, html input[type=submit]:active, .button:active, html a:active:not(.plain) {
+  background-color: #fafafa;
+  box-shadow: 0em 0.2em 1em rgba(0, 0, 0, 0.5);
+}
+#button:disabled, html button:disabled, html input[type=button]:disabled, html input[type=submit]:disabled, .button:disabled, html a:disabled:not(.plain) {
+  background-color: #e6e6e6;
+  color: gray;
+}
+#button.wide, html button.wide, html input.wide[type=button], html input.wide[type=submit], .wide.button, html a.wide:not(.plain) {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+html body #middle .row, html body #top #down-arrow-container #down-arrow, html body #top #title-and-motto-container, html body #top {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+html body #top #title-and-motto-container, html body #top {
+  flex-direction: column;
+}
+
+html input[type=text], html textarea, html body #middle .section .title, html body #middle .section, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  border-radius: 0.2rem;
+}
+
+html body #middle .section, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  margin: 0.5em;
+}
+
+html body #footer, html body #middle #contact-us #email, html body #middle #contact-us #name, html body #middle #contact-us #message, html body #middle .section .content, html body #middle .section .title, #button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  padding: 0.5em;
+}
+
+#button, html button, html input[type=button], html input[type=submit], .button, html a:not(.plain) {
+  text-transform: unset !important;
+}
+
+.icon {
+  width: 1em;
+}
+
+.parallax.container, html body .container#background, html body {
+  height: 100vh;
+  overflow-y: auto;
+  perspective: 1px;
+  position: relative;
+}
+.parallax.item, html body #background, html body.item {
+  font-size: 2em;
+  position: absolute;
+  transform: translateZ(-1px);
+}
+
+html {
+  font-family: sans-serif;
+  overflow-y: auto;
+}
+html body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+html body #background {
+  background-image: url("../img/bg.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200vh;
+  left: -50vw;
+  top: -50vh;
+  width: 200vw;
+  z-index: -1;
+}
+html body #top {
+  height: 100vh;
+  position: relative;
+}
+html body #top #title-and-motto-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+html body #top #title-and-motto-container #title {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+html body #top #title-and-motto-container #motto {
+  font-size: 2em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+html body #top #down-arrow-container {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+html body #top #down-arrow-container .spacer {
+  height: 100%;
+}
+html body #top #down-arrow-container #down-arrow {
+  bottom: 0;
+  color: #333333;
+  font-size: 5em;
+  margin-top: -1em;
+  position: absolute;
+  position: sticky;
+}
+html body #middle {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120ch;
+  position: relative;
+}
+html body #middle .row {
+  align-items: stretch;
+  justify-content: space-around;
+}
+html body #middle .row .column {
+  flex: 1;
+}
+html body #middle .section {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+html body #middle .section .title {
+  background-color: #333333;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: white;
+  display: block;
+  font-size: 2em;
+  text-align: center;
+}
+html body #middle .section .content {
+  background-color: white;
+}
+html body #middle #investigative-services {
+  margin-right: 0.25em;
+}
+html body #middle #background-and-experience {
+  margin-left: 0.25em;
+}
+html body #middle #contact-us {
+  margin-top: 0;
+}
+html body #middle #contact-us #email, html body #middle #contact-us #name, html body #middle #contact-us #message {
+  box-sizing: border-box;
+  width: 100%;
+}
+html body #middle #contact-us #message {
+  height: 10em;
+  vertical-align: top;
+}
+html body #middle #contact-us .grecaptcha-badge {
+  display: none;
+}
+html body #middle #contact-us table {
+  width: 100%;
+}
+html body #middle #contact-us table td:nth-child(2) {
+  width: 100%;
+}
+html body #middle #contact-us table td:not(:nth-child(2)) {
+  width: auto;
+}
+html body #middle #contact-us .error {
+  background-color: #ffcccc;
+  border-color: #990000;
+  border-radius: 1em;
+  border-style: solid;
+  border-width: 0.15em;
+  color: #990000;
+  padding: 0.75em;
+}
+html body #middle #contact-us #send-email {
+  margin-left: auto;
+  margin-right: 0;
+}
+html body #middle #contact-us #send-email .wording {
+  display: none;
+}
+html body #middle #contact-us #send-email #wording-send-email {
+  display: initial;
+}
+html body #footer {
+  font-size: 0.5em;
+  text-align: right;
+}
+html a, html a:not(.plain) {
+  color: #0249A8;
+  text-decoration: none;
+}
+html input[type=text], html textarea {
+  border: thin solid rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */

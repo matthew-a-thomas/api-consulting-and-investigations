@@ -1,0 +1,8 @@
+html body #top #down-arrow-container {
+  display: none;
+}
+html body #middle {
+  margin-top: -7em;
+}
+
+/*# sourceMappingURL=1300.css.map */
