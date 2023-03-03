@@ -5,6 +5,14 @@
 @import 'round';
 @import 'spacing';
 
+#button {
+    text-transform: unset !important;
+}
+
+.icon {
+    width: 1em;
+}
+
 .parallax {
     &.container {
         height: 100vh;
